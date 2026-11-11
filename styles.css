@@ -47,8 +47,6 @@ button { cursor: pointer; }
 .specialist-nav { display: none; }
 body.specialist-mode .employer-nav { display: none; }
 body.specialist-mode .specialist-nav { display: grid; }
-.nav-label.specialist-nav { display: none; }
-body.specialist-mode .nav-label.specialist-nav { display: block; }
 .tools-label { margin-top: 30px; }
 .sidebar-bottom { margin-top: auto; }
 .help-card { padding: 14px 13px 13px; border: 1px solid #33433b; border-radius: 10px; background: #20342c; }
@@ -353,7 +351,6 @@ h1 { margin-bottom: 7px; font: 700 30px Manrope, sans-serif; letter-spacing: -.9
 }
 @media (max-width: 560px) {
   body, .app-shell { min-width: 0; width: 100%; }
-  body.specialist-mode .nav-label.specialist-nav { display: none; }
   .sidebar { width: 54px; padding-left: 4px; padding-right: 4px; }
   .workspace-switcher { width: 40px; }
   .nav-item { width: 40px; height: 40px; }
