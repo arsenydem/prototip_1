@@ -352,19 +352,21 @@ h1 { margin-bottom: 7px; font: 700 30px Manrope, sans-serif; letter-spacing: -.9
   .stats-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 560px) {
+  body, .app-shell { min-width: 0; width: 100%; }
+  body.specialist-mode .nav-label.specialist-nav { display: none; }
   .sidebar { width: 54px; padding-left: 4px; padding-right: 4px; }
   .workspace-switcher { width: 40px; }
   .nav-item { width: 40px; height: 40px; }
-  .main-area { margin-left: 54px; }
+  .main-area { width: calc(100% - 54px); min-width: 0; margin-left: 54px; }
   .topbar { height: 54px; gap: 6px; padding: 0 8px; }
-  .breadcrumb > span, .breadcrumb-slash, .notification-button { display: none; }
+  .breadcrumb { display: none; }
   .breadcrumb strong { max-width: 88px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .topbar-actions { flex: 0 0 auto; gap: 0; }
+  .topbar-actions { flex: 0 0 auto; gap: 0; margin-left: auto; }
   .mode-switch { gap: 1px; }
   .mode-button { min-height: 26px; padding: 0 4px; font-size: 9px; }
   .breadcrumb { font-size: 12px; gap: 6px; }
   .today-label, .topbar-divider { display: none; }
-  .page-content { padding: 22px 13px 35px; }
+  .page-content { width: 100%; min-width: 0; padding: 22px 13px 35px; }
   .page-heading { align-items: flex-start; flex-direction: column; gap: 13px; }
   h1 { font-size: 25px; }
   .welcome-banner { min-height: 140px; padding: 20px 17px; }
@@ -390,6 +392,9 @@ h1 { margin-bottom: 7px; font: 700 30px Manrope, sans-serif; letter-spacing: -.9
   .candidate-table { min-width: 560px; }
   .specialist-hero { padding: 20px 17px; }
   .specialist-hero h1 { font-size: 22px; }
+  .specialist-toolbar .search-box, .specialist-toolbar .filter-select { flex: 1 1 100%; width: 100%; max-width: none; }
+  .specialist-jobs, .job-list, .job-card { min-width: 0; width: 100%; }
+  .job-card-meta { gap: 8px 12px; }
   .job-card-actions { justify-content: stretch; }
   .job-card-actions button { flex: 1 1 130px; }
   .application-card { flex-wrap: wrap; }
