@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f6f2" />
+    <title>Практика — найм по реальным навыкам</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#" aria-label="Практика — на главную">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>практика<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="workspace-switcher">
+          <div class="workspace-avatar" id="workspace-avatar">К</div>
+          <div class="workspace-copy"><strong id="workspace-name">Компания</strong><span id="workspace-description">Рабочее пространство</span></div>
+        </div>
+
+        <div class="nav-label employer-nav">РАБОЧЕЕ</div>
+        <nav class="main-nav employer-nav" aria-label="Кабинет компании">
+          <button class="nav-item active" data-page="overview"><span class="nav-icon">⌂</span>Обзор</button>
+          <button class="nav-item" data-page="vacancies"><span class="nav-icon">▤</span>Вакансии<span class="nav-count">3</span></button>
+          <button class="nav-item" data-page="candidates"><span class="nav-icon">♙</span>Кандидаты<span class="nav-count" id="candidate-count">8</span></button>
+          <button class="nav-item" data-page="tasks"><span class="nav-icon">▧</span>Задания</button>
+        </nav>
+
+        <div class="nav-label tools-label employer-nav">ИНСТРУМЕНТЫ</div>
+        <nav class="main-nav employer-nav" aria-label="Инструменты">
+          <button class="nav-item" data-page="evaluation"><span class="nav-icon">◉</span>Оценка</button>
+        </nav>
+        <div class="nav-label specialist-nav">ДЛЯ СПЕЦИАЛИСТОВ</div>
+        <nav class="main-nav specialist-nav" aria-label="Кабинет специалиста">
+          <button class="nav-item" data-page="browse"><span class="nav-icon">⌕</span>Вакансии и задания</button>
+          <button class="nav-item" data-page="my-applications"><span class="nav-icon">▣</span>Мои отклики<span class="nav-count" id="application-count">0</span></button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <div class="help-spark">✳</div>
+            <strong>Нужна помощь?</strong>
+            <p>Поможем превратить рабочую задачу в понятное задание для кандидата.</p>
+            <button data-action="help">Связаться с нами <span>↗</span></button>
+          </div>
+          <button class="profile-button">
+            <span class="profile-avatar" id="profile-avatar">К</span>
+            <span class="profile-copy"><strong id="profile-name">Представитель компании</strong><span id="profile-role">Команда найма</span></span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Компания</span><span class="breadcrumb-slash">/</span><strong id="breadcrumb-current">Обзор</strong></div>
+          <div class="topbar-actions">
+            <div class="mode-switch" role="group" aria-label="Вид кабинета">
+              <button class="mode-button active" data-mode="employer">Компания</button>
+              <button class="mode-button" data-mode="specialist">Я специалист</button>
+            </div>
+            <span class="today-label" id="today-label"></span>
+          </div>
+        </header>
+        <div id="page-content" class="page-content"></div>
+      </main>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

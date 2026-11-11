@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f2">
+    <title>Каталог услуг</title>
+    <link rel="stylesheet" href="candidate_answer_frontend.css">
+    <script src="candidate_answer_frontend.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="На главную">форма<span>.</span></a>
+      <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#about">О нас</a></nav>
+      <a class="contact-link" href="mailto:hello@example.com">Связаться <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">Сервисная команда</p>
+        <h1>Услуги, которые<br><span>помогают расти.</span></h1>
+        <p class="intro-copy">Выберите подходящий формат поддержки. Расскажем, с чего начать, и поможем подобрать решение для вашей задачи.</p>
+        <a class="intro-link" href="#services">Смотреть услуги <span aria-hidden="true">↓</span></a>
+        <div class="intro-decoration" aria-hidden="true"><div class="deco-orbit"></div><div class="deco-tile">↗</div><div class="deco-dot"></div></div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="section-top">
+          <div><p class="eyebrow">Чем можем помочь</p><h2>Наши услуги</h2></div>
+          <label class="search-control"><span aria-hidden="true">⌕</span><input id="service-search" type="search" placeholder="Найти услугу" aria-label="Найти услугу"></label>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="service-grid" id="service-list" aria-live="polite">
+          <p class="state-message" role="status">Загружаем услуги…</p>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <p class="eyebrow">Простой следующий шаг</p>
+        <h2>Есть задача?<br>Давайте обсудим.</h2>
+        <a class="contact-link" href="mailto:hello@example.com">Написать нам <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#">форма<span>.</span></a><div class="source-files"><span>Файлы решения:</span><a href="candidate_answer_frontend.css">CSS</a><a href="candidate_answer_frontend.js">JavaScript</a></div><span>Каталог услуг · 2026</span></footer>
+  </body>
+</html>

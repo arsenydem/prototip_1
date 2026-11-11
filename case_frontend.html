@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f2">
+    <title>Задание — каталог услуг</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .case-page { max-width: 860px; margin: 0 auto; padding: 48px 24px; color: #23332a; font: 16px/1.65 Arial, sans-serif; }
+      .case-page a { color: #2f7157; font-weight: 700; }
+      .case-kicker { color: #63816b; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+      .case-page h1 { margin: 10px 0; font-size: clamp(30px, 5vw, 42px); line-height: 1.15; }
+      .case-lead { color: #68776d; font-size: 18px; }
+      .case-section { margin-top: 30px; padding: 22px; border: 1px solid #e4e9e3; border-radius: 12px; background: #fff; }
+      .case-section h2 { margin: 0 0 10px; font-size: 21px; }
+      .case-page li { margin: 7px 0; }
+      .case-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+      .case-meta span { padding: 6px 11px; border-radius: 20px; color: #416749; background: #eaf3eb; font-size: 13px; font-weight: 700; }
+      .case-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+      @media (max-width: 520px) { .case-page { padding: 28px 16px; } .case-section { padding: 17px; } }
+    </style>
+  </head>
+  <body>
+    <main class="case-page">
+      <a href="index.html">← Практика</a>
+      <p class="case-kicker">Задание для начинающего специалиста · IT</p>
+      <h1>Собрать страницу каталога</h1>
+      <p class="case-lead">Покажите, как вы превращаете требования продукта в работающий интерфейс.</p>
+      <div class="case-meta"><span>Стажёр Frontend-разработчик</span><span>До 2 часов</span></div>
+
+      <section class="case-section">
+        <h2>Ситуация</h2>
+        <p>В каталоге нужно показать список услуг, полученный от API. Считайте, что API возвращает массив объектов с полями <code>name</code>, <code>description</code> и <code>price</code>. Макета и готового API нет.</p>
+      </section>
+      <section class="case-section">
+        <h2>Задача</h2>
+        <p>Сделайте небольшой адаптивный экран каталога. Можно использовать любой знакомый стек или чистые HTML, CSS и JavaScript.</p>
+        <ol>
+          <li>Покажите карточки услуг с названием, кратким описанием и ценой.</li>
+          <li>Предусмотрите состояния загрузки, пустого списка и ошибки.</li>
+          <li>Сделайте интерфейс удобным на узком мобильном экране.</li>
+          <li>Кратко объясните структуру решения и как его проверить.</li>
+        </ol>
+      </section>
+      <section class="case-section">
+        <h2>Что отправить</h2>
+        <p>Ссылку на работающий прототип или файлы проекта и короткую инструкцию. Если не успеваете сделать всё, опишите оставшиеся шаги и свои допущения.</p>
+      </section>
+      <section class="case-section">
+        <h2>Критерии оценки</h2>
+        <ul>
+          <li>Рабочее решение и обработка состояний — 35%.</li>
+          <li>Структура и понятность кода — 25%.</li>
+          <li>Адаптивность и удобство интерфейса — 20%.</li>
+          <li>Объяснение решения и инструкции — 20%.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
